@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Status Modals</title>
       </Head>
-      <Status message={"hello"} />
+      <Status message={"hello"} status="error" />
     </React.Fragment>
   );
 }

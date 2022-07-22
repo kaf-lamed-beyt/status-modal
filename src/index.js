@@ -2,18 +2,15 @@ import React from "react";
 import propTypes from "prop-types";
 import style from "./style/status.module.scss";
 import { BsCheck2All } from "react-icons/bs";
-import { MdWifiThetheringRounded } from "react-icons/md";
+import { MdWifiTetheringErrorRounded } from "react-icons/md";
 
 // if the proptype of error is true, use the red color,
 // if not use the success color
-
-const Status = ({ message, status, fill, outline }) => {
+const Status = ({ message, status }) => {
   return (
-    <div
-      className={`(${style.default} ${status === "error" ? style.error : ""})`}
-    >
+    <div className={status === "error" ? style.error : style.default}>
       <p>{message}</p>
-      {status !== "error" ? <BsCheck2All /> : <MdWifiThetheringRounded />}
+      {status !== "error" ? <BsCheck2All /> : <MdWifiTetheringErrorRounded />}
     </div>
   );
 };
