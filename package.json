@@ -4,7 +4,11 @@
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "next start",
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build"
   },
   "keywords": [
     "react",
