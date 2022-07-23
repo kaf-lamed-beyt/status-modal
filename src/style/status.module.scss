@@ -1,7 +1,6 @@
-// :root {
-//   --success: #4bb543;
-//   --danger: #ff0000;
-// }
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+// font-family: 'Space Grotesk', sans-serif;
 .default {
   width: 300px;
   height: 45px;
@@ -51,7 +50,7 @@
   color: #ff0000;
   padding-top: 5px;
   position: absolute;
-  margin-top: 40px;
+  margin-top: -40px;
   margin-left: 0px;
   z-index: 10;
   padding: 7px 8px;
@@ -67,6 +66,12 @@
     font-size: 20px;
     font-weight: 500;
   }
+}
+
+// outline style
+.outline {
+  border-bottom: none;
+  border: 2px solid inherit;
 }
 
 @keyframes scaleModal {
