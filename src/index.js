@@ -7,7 +7,7 @@ import { MdWifiThetheringRounded } from "react-icons/md";
 // if the proptype of error is true, use the red color,
 // if not use the success color
 
-const Status = ({ message, status, fill, outline }) => {
+export const Status = ({ message, status, fill, outline }) => {
   return (
     <div
       className={`(${style.default} ${status === "error" ? style.error : ""})`}
@@ -17,8 +17,6 @@ const Status = ({ message, status, fill, outline }) => {
     </div>
   );
 };
-
-export default Status;
 
 propTypes.Status = {
   message: propTypes.string.isRequired,
