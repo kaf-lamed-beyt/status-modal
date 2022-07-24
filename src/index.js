@@ -4,9 +4,6 @@ import style from "./style/status.module.scss";
 import { BsCheck2All } from "react-icons/bs";
 import { MdWifiThetheringRounded } from "react-icons/md";
 
-// if the proptype of error is true, use the red color,
-// if not use the success color
-
 export const Status = ({ message, status, fill, outline }) => {
   return (
     <div
