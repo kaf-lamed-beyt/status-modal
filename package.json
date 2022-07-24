@@ -1,6 +1,6 @@
 {
-  "name": "next-status-modal",
-  "version": "0.0.5",
+  "name": "status-modal",
+  "version": "0.0.1",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "./src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaf-lamed-beyt/next-status-modal"
+    "url": "https://github.com/kaf-lamed-beyt/status-modal"
   },
   "keywords": [
     "react",

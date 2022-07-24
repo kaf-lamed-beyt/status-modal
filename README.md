@@ -9,14 +9,14 @@ A react component that you can use to render current error or success messages f
 You can use this package by installing it with the command below
 
 ```bash
-npm install next-status-modal
+npm install status-modal
 ```
 
 When you're done with the above step, simply import the component in your project. The snippet below shows a basic usage without some of the props
 
 ```jsx
 import React from "react";
-import { Status } from "next-status-modal";
+import { Status } from "status-modal/dist";
 
 export default function Home() {
   const message = "Hello status modal";
