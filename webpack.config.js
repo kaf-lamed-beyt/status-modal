@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.s[ac]ss$/,
         use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
       },
     ],

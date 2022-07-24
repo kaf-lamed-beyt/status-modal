@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _statusModule = _interopRequireDefault(require("./style/status.module.scss"));
+var _status = _interopRequireDefault(require("./style/status.scss"));
 
 var _bs = require("react-icons/bs");
 
@@ -20,12 +20,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const Status = _ref => {
   let {
     message,
-    status,
-    fill,
-    outline
+    status
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "(".concat(_statusModule.default.default, " ").concat(status === "error" ? _statusModule.default.error : "", ")")
+    className: "(".concat(_status.default.default, " ").concat(status === "error" ? _status.default.error : "", ")")
   }, /*#__PURE__*/_react.default.createElement("p", null, message), status !== "error" ? /*#__PURE__*/_react.default.createElement(_bs.BsCheck2All, null) : /*#__PURE__*/_react.default.createElement(_md.MdWifiThetheringRounded, null));
 };
 

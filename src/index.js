@@ -1,10 +1,10 @@
 import React from "react";
 import propTypes from "prop-types";
-import style from "./style/status.module.scss";
+import style from "./style/status.scss";
 import { BsCheck2All } from "react-icons/bs";
 import { MdWifiThetheringRounded } from "react-icons/md";
 
-export const Status = ({ message, status, fill, outline }) => {
+export const Status = ({ message, status }) => {
   return (
     <div
       className={`(${style.default} ${status === "error" ? style.error : ""})`}
