@@ -1,6 +1,6 @@
 {
   "name": "next-status-modal",
-  "version": "^1.0.2",
+  "version": "1.0.2",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "./src/index.js",
   "scripts": {
