@@ -14,6 +14,9 @@ module.exports = {
         test: /\.js?$/,
         exclude: /(node_modules)/,
         use: "babel-loader",
+        options: {
+          presets: ["babel-preset-env", "babel-preset-react"],
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
