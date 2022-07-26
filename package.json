@@ -30,7 +30,6 @@
     "babel-loader": "^8.2.5",
     "dart-sass": "^1.25.0",
     "next": "^12.2.3",
-    "next-status-modal": "^1.0.4",
     "node-sass": "^7.0.1",
     "postcss-loader": "^7.0.1",
     "prop-types": "^15.8.1",
