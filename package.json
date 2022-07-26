@@ -1,6 +1,6 @@
 {
   "name": "status-modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "./src/index.js",
   "scripts": {
