@@ -1,11 +1,12 @@
 const path = require("path");
+const pkg = require("./package.json");
 
 module.exports = {
-  mode: "production",
-  entry: "/dist/ndex.js",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve("dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    library: pkg.name,
     libraryTarget: "commonjs2",
   },
   module: {
@@ -14,9 +15,6 @@ module.exports = {
         test: /\.js?$/,
         exclude: /(node_modules)/,
         use: "babel-loader",
-        options: {
-          presets: ["babel-preset-env", "babel-preset-react"],
-        },
       },
       {
         test: /\.scss$/,
