@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: "/dist/ndex.js",
   output: {
     path: path.resolve("dist"),
     filename: "index.js",
