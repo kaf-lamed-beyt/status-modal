@@ -4,7 +4,7 @@ import style from "./style/status.scss";
 import { BsCheck2All } from "react-icons/bs";
 import { MdWifiThetheringRounded } from "react-icons/md";
 
-const Status = ({ message, status }) => {
+export const Status = ({ message, status }) => {
   return (
     <div
       className={`(${style.default} ${status === "error" ? style.error : ""})`}
@@ -14,8 +14,6 @@ const Status = ({ message, status }) => {
     </div>
   );
 };
-
-export default Status;
 
 propTypes.Status = {
   message: propTypes.string.isRequired,

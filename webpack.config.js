@@ -1,8 +1,9 @@
 const path = require("path");
 const pkg = require("./package.json");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["./src/index.js", "./src/style/status.scss"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
@@ -18,7 +19,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+          "postcss-loader",
+        ],
       },
     ],
   },
@@ -43,4 +49,9 @@ module.exports = {
       root: "ReactDOM",
     },
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "style/status.scss",
+    }),
+  ],
 };
