@@ -1,11 +1,11 @@
 {
   "name": "status-modal",
-  "version": "0.0.48",
+  "version": "0.0.49",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "webpack --mode=production",
     "dev": "next dev"
   },
   "repository": {
