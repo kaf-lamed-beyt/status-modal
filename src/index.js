@@ -6,7 +6,7 @@ import "./style/status.scss";
 
 const Status = ({ message, status }) => {
   return (
-    <div className={`default ${status === "error" && style.error}`}>
+    <div className={`default ${status === "error" && "error"}`}>
       <p>{message}</p>
       {status !== "error" ? <BsCheck2All /> : <BiErrorCircle />}
     </div>
