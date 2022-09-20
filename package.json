@@ -1,6 +1,6 @@
 {
   "name": "status-modal",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "/dist/index.js",
   "scripts": {
@@ -38,7 +38,12 @@
     "rollup-plugin-css-bundle": "^1.0.4",
     "rollup-plugin-generate-package-json": "^3.2.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react-icons": "^4.4.0"
   }
 }

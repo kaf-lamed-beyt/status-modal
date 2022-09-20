@@ -3,6 +3,7 @@ import commonjs from "rollup-plugin-commonjs";
 import resolve from "rollup-plugin-node-resolve";
 import generatePackageJSON from "rollup-plugin-generate-package-json";
 import scss from "rollup-plugin-scss";
+import postcss from "rollup-plugin-postcss";
 
 export default {
   input: "src/index.js",
@@ -33,5 +34,6 @@ export default {
     scss({
       outputStyle: "compressed",
     }),
+    postcss(),
   ],
 };
