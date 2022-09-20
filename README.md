@@ -1,4 +1,4 @@
-![issues](https://img.shields.io/github/issues/kaf-lamed-beyt/next-status-modal) ![forks](https://img.shields.io/github/forks/kaf-lamed-beyt/next-status-modal) ![stars](https://img.shields.io/github/stars/kaf-lamed-beyt/next-status-modal) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![license](https://img.shields.io/github/license/kaf-lamed-beyt/next-status-modal) ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkaf-lamed-beyt%2Fnext-status-modal)
+[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)![issues](https://img.shields.io/github/issues/kaf-lamed-beyt/next-status-modal) ![forks](https://img.shields.io/github/forks/kaf-lamed-beyt/next-status-modal) ![stars](https://img.shields.io/github/stars/kaf-lamed-beyt/next-status-modal) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![license](https://img.shields.io/github/license/kaf-lamed-beyt/next-status-modal) ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkaf-lamed-beyt%2Fnext-status-modal)
 
 # status-modal
 

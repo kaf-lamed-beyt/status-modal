@@ -1,9 +1,8 @@
 import babel from "rollup-plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
-import resolve from "rollup-plugin-node-resolve";
 import generatePackageJSON from "rollup-plugin-generate-package-json";
-import scss from "rollup-plugin-scss";
-import postcss from "rollup-plugin-postcss";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import styles from "rollup-plugin-styles";
 
 export default {
   input: "src/index.js",
@@ -13,7 +12,7 @@ export default {
   },
   external: ["react", "react-dom", "react-icons"],
   plugins: [
-    resolve({
+    nodeResolve({
       extensions: [".js", ".jsx", ".scss", ".css", ".svg"],
     }),
     babel({
@@ -31,9 +30,6 @@ export default {
       }),
     }),
     commonjs(),
-    scss({
-      outputStyle: "compressed",
-    }),
-    postcss(),
+    styles(),
   ],
 };
