@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
-$grotesk: "Space Grotesk", sans-serif;
-$success: #4bb543;
-$danger: #ff0000;
+// variables
+// :root {
+//   --grotesk: "Space Grotesk", sans-serif;
+//   --success: #4bb543;
+//   --danger: #ff0000;
+// }
 
 .default {
   width: 300px;
@@ -11,12 +14,12 @@ $danger: #ff0000;
   justify-content: space-between;
   position: absolute;
   background: ghostwhite;
-  border-bottom: 2px solid $success;
+  border-bottom: 2px solid #4bb543;
   box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.11);
   font-weight: 500;
   border-radius: 3px;
   opacity: 0;
-  color: $success;
+  color: #4bb543;
   padding-top: 5px;
   position: absolute;
   margin-top: 120px;
@@ -31,7 +34,7 @@ $danger: #ff0000;
   }
 
   svg {
-    color: $success;
+    color: #4bb543;
     font-size: 20px;
     font-weight: 500;
   }
@@ -45,12 +48,12 @@ $danger: #ff0000;
   justify-content: space-between;
   position: absolute;
   background: ghostwhite;
-  border-bottom: 2px solid $danger;
+  border-bottom: 2px solid #ff0000;
   box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.11);
   font-weight: 500;
   border-radius: 3px;
   opacity: 0;
-  color: $danger;
+  color: #ff0000;
   padding-top: 5px;
   position: absolute;
   margin-top: -40px;
@@ -65,7 +68,7 @@ $danger: #ff0000;
   }
 
   svg {
-    color: $danger;
+    color: #ff0000;
     font-size: 20px;
     font-weight: 500;
   }
