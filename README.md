@@ -1,4 +1,4 @@
-[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)![issues](https://img.shields.io/github/issues/kaf-lamed-beyt/next-status-modal) ![forks](https://img.shields.io/github/forks/kaf-lamed-beyt/next-status-modal) ![stars](https://img.shields.io/github/stars/kaf-lamed-beyt/next-status-modal) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![license](https://img.shields.io/github/license/kaf-lamed-beyt/next-status-modal) ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkaf-lamed-beyt%2Fnext-status-modal)
+[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria) ![issues](https://img.shields.io/github/issues/kaf-lamed-beyt/next-status-modal) ![forks](https://img.shields.io/github/forks/kaf-lamed-beyt/next-status-modal) ![stars](https://img.shields.io/github/stars/kaf-lamed-beyt/next-status-modal) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![license](https://img.shields.io/github/license/kaf-lamed-beyt/next-status-modal) ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkaf-lamed-beyt%2Fnext-status-modal)
 
 # status-modal
 
@@ -35,6 +35,88 @@ But, if you want to alter the style of the modal to fit the case of an error mes
 
 ```jsx
 <Status message={message} status="error" />
+```
+
+## Showing user authentication status.
+
+Say you're working on a sign-in page of a web app and you need a way to let your users know the current state of their request whether it is successful or not.
+
+You can make use of `status-modal` to display the error or success message you get from the API response. To do that in react, you'll probably need some state variables declared already with the `useState()` hook.
+
+An example of such state variables could be the email and password of the user. Most importantly, the `error` and `success` state variables too.
+
+```jsx
+import React from "react";
+import axios from "axios";
+import { Status } from "status-modal/dist";
+
+export default function SignIn() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [signInSuccess, setSignInSuccess] = React.useState();
+  const [signInError, setSignInError] = React.useState();
+
+  return (
+    <React.Fragment>
+      <form onSubmit={handleSignIn}>
+        <p>sign in</p>
+        ...rest of the form layout
+      </form>
+    </React.Fragment>
+  );
+}
+```
+
+With your form layout in place, you can start working on the handler function that signs the user in. An example looks like what you'd see in the snippet below.
+
+```js
+const handleSignIn = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await axios({
+      method: "POST",
+      url: authEndpoints.login,
+      data: {
+        email,
+        password,
+      },
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    // get the status of the request from the backend and pass it into the
+    // success state variable.
+    // repeat the same thing for the error message in the catch block.
+    setSignInSuccess(response.data.message);
+    setSignInError("");
+  } catch (error) {
+    setSignInError(error.response.data.msg);
+    setSignInSuccess("");
+  }
+};
+```
+
+With the handler successfully in place. Next step would be to conditionally render the modals. Take a look at how below.
+
+```jsx
+export default function SignIn() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [signInSuccess, setSignInSuccess] = React.useState();
+  const [signInError, setSignInError] = React.useState();
+
+  return (
+    <React.Fragment>
+      {signInError ? <Status message={signInError} status="error" /> : null}
+      {signInSuccess ? <Status message={signInSuccess} /> : null}
+      <form onSubmit={handleSignIn}>
+        <p>sign in</p>
+        ...rest of the form layout
+      </form>
+    </React.Fragment>
+  );
+}
 ```
 
 ## Want to contribute?
