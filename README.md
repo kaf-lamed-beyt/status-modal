@@ -37,6 +37,28 @@ But, if you want to alter the style of the modal to fit the case of an error mes
 <Status message={message} status="error" />
 ```
 
+## Using status-modal with Next.js
+
+When you install status-modal in a Next.js app and try to use it, Next.js throws an error "ReferenceError: document is not defined" this happens because the document object is not available on the server when the page is built.
+
+You can fix this with Next.js dynamic imports, while taking note of the `ssr` flag.
+
+```jsx
+import React from "react";
+import dynamic from "next/dynamic";
+
+// import the package with dynmaic imports
+const Status = dynamic(() => "status-modal".then((mod) => mod.Status), {
+  ssr: false,
+});
+
+export default function Component() {
+  const greetings = "Hello world";
+
+  return <Status message={greetings} />;
+}
+```
+
 ## Showing user authentication status.
 
 Say you're working on a sign-in page of a web app and you need a way to let your users know the current state of their request whether it is successful or not.
