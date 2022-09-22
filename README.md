@@ -48,7 +48,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 // import the package with dynmaic imports
-const Status = dynamic(() => "status-modal".then((mod) => mod.Status), {
+const Status = dynamic(() => import("status-modal").then((mod) => mod.Status), {
   ssr: false,
 });
 
