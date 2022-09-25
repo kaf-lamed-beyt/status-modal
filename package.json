@@ -1,11 +1,12 @@
 {
   "name": "status-modal",
-  "version": "0.1.55",
+  "version": "0.1.56",
   "description": "A react component that you can use to render current error or success messages from a particular API endpoint",
   "main": "/dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@rollup/plugin-node-resolve": "^14.1.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-scss": "^1.1.0",
+    "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.79.0",

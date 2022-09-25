@@ -1,5 +1,6 @@
 src
 node_modules
 pages
-webpack-config.js
+rollup.config.js
 CONTRIBUTING.md
+.next
