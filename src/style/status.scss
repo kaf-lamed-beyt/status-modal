@@ -9,19 +9,32 @@
   animation: none;
 }
 
-.default {
+@mixin default ($status: "success") {
   width: 300px;
   height: 45px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   background: ghostwhite;
-  border-bottom: 2px solid var(--success);
+  @if $status == "error" {
+    border-bottom: 2px solid var(--danger);
+    color: var(--danger);
+    margin-top: -40px;
+    svg {
+      color: var(--danger);
+    }
+  } @else {
+    border-bottom: 2px solid var(--success);
+    color: var(--success);
+    margin-top: 120px;
+    svg {
+      color: var(--success);
+    }
+  }
   box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.11);
   font-weight: 500;
   border-radius: 3px;
   opacity: 0;
-  color: var(--success);
   padding-top: 5px;
   position: absolute;
   margin-top: 120px;
@@ -36,44 +49,18 @@
   }
 
   svg {
-    color: var(--success);
     font-size: 20px;
     font-weight: 500;
   }
 }
 
+.default {
+  @include default();
+}
+
 // error modal style
 .error {
-  width: 300px;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  background: ghostwhite;
-  border-bottom: 2px solid var(--danger);
-  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.11);
-  font-weight: 500;
-  border-radius: 3px;
-  opacity: 0;
-  color: var(--danger);
-  padding-top: 5px;
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 0px;
-  z-index: 10;
-  padding: 7px 8px;
-  animation: scaleModal 6s ease-in forwards;
-
-  p {
-    font-size: 15px;
-    font-weight: 600;
-  }
-
-  svg {
-    color: var(--danger);
-    font-size: 20px;
-    font-weight: 500;
-  }
+  @include default($status: "error");
 }
 
 // outline style
