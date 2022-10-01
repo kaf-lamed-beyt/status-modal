@@ -23,7 +23,8 @@ export default function Home() {
           status-modal
         </span>
       </h3>
-      <Status message={greetings} />
+      <Status message={greetings} error={false} />
+      <Status message={greetings} error={true} />
     </React.Fragment>
   );
 }
