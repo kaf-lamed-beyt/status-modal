@@ -36,6 +36,11 @@ But, if you want to alter the style of the modal to fit the case of an error mes
 ```jsx
 <Status message={message} status="error" />
 ```
+You can also use the `error` prop to apply the error style.
+
+```jsx
+<Status message={message} error />
+```
 
 ## Using status-modal with Next.js
 
