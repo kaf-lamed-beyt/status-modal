@@ -1,6 +1,10 @@
 {
+  "projectName": "status-modal",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectOwner": "kaf-lamed-beyt",
   "files": [
-    "README.md"
+    "contributors.md"
   ],
   "imageSize": 100,
   "commit": false,
@@ -17,9 +21,5 @@
     }
   ],
   "contributorsPerLine": 7,
-  "skipCi": true,
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "projectName": "status-modal",
-  "projectOwner": "kaf-lamed-beyt"
+  "skipCi": true
 }
