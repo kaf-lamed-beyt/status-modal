@@ -18,6 +18,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "imanpalsingh",
+      "name": "Imanpal Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49276301?v=4",
+      "profile": "https://imanpalsingh.vercel.app/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
