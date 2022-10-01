@@ -1,9 +1,6 @@
 [![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria) ![issues](https://img.shields.io/github/issues/kaf-lamed-beyt/next-status-modal) ![forks](https://img.shields.io/github/forks/kaf-lamed-beyt/next-status-modal) ![stars](https://img.shields.io/github/stars/kaf-lamed-beyt/next-status-modal) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![license](https://img.shields.io/github/license/kaf-lamed-beyt/next-status-modal) ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkaf-lamed-beyt%2Fnext-status-modal)
-
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # status-modal
@@ -42,7 +39,6 @@ But, if you want to alter the style of the modal to fit the case of an error mes
 ```jsx
 <Status message={message} status="error" />
 ```
-
 You can also use the `error` prop to apply the error style.
 
 ```jsx
@@ -156,3 +152,28 @@ export default function SignIn() {
 ## Want to contribute?
 
 Checkout the [contributing guide](CONTRIBUTING.md) on how to go about that.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/Emmanuel-Develops"><img src="https://avatars.githubusercontent.com/u/62019510?v=4?s=100" width="100px;" alt="Emmanuel Itakpe"/><br /><sub><b>Emmanuel Itakpe</b></sub></a><br /><a href="https://github.com/kaf-lamed-beyt/status-modal/commits?author=Emmanuel-Develops" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    
+  </tfoot>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
