@@ -4,11 +4,11 @@ import { BsCheck2All } from "react-icons/bs/";
 import { BiErrorCircle } from "react-icons/bi";
 import "./style/status.scss";
 
-const Status = ({ message, status }) => {
+const Status = ({ message, status, error }) => {
   return (
-    <div className={`default ${status === "error" && "error"}`}>
+    <div className={`default ${status === "error" || error ? "error" : ""}`}>
       <p>{message}</p>
-      {status !== "error" ? <BsCheck2All /> : <BiErrorCircle />}
+      {(status === "error" || error) ? <BiErrorCircle /> : <BsCheck2All /> } 
     </div>
   );
 };
@@ -16,6 +16,7 @@ const Status = ({ message, status }) => {
 propTypes.Status = {
   message: propTypes.string.isRequired,
   status: propTypes.string,
+  error: propTypes.bool,
 };
 
 export { Status };
