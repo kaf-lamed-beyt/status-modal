@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import propTypes from "prop-types";
 import "./style/status.scss";
-import ReactPortal from "./components/ReactPortal";
+import Portal from "./components/Portal";
 import StatusInner from "./components/StatusInner";
 
 const Status = ({ wrapperId, ...props }) => {
@@ -23,9 +23,9 @@ const Status = ({ wrapperId, ...props }) => {
 
   return (
     <>
-      <ReactPortal root={wrapperRoot}>
+      <Portal root={wrapperRoot}>
         <StatusInner {...props} setRemoveElement={setRemoveElement} />
-      </ReactPortal>
+      </Portal>
     </>
   );
 };
@@ -34,7 +34,7 @@ Status.defaultProps = {
   error: false,
   wrapperId: "status-modal-root",
   autoClose: true,
-  duration: 5000,
+  duration: 3000,
 };
 
 propTypes.Status = {
