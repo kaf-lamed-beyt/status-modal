@@ -39,6 +39,7 @@ export default function Home() {
       <button onClick={() => setCount(count => count+1)}>
         Click Me
       </button>
+      <p>Hover on Status while closing to keep it open</p>
       <Status message={greetings} error={false} />
       <Status message={testError} error={true} />
       {testStatus}
