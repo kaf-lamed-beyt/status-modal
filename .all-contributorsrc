@@ -1,0 +1,43 @@
+{
+  "projectName": "status-modal",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectOwner": "kaf-lamed-beyt",
+  "files": [
+    "contributors.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Emmanuel-Develops",
+      "name": "Emmanuel Itakpe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62019510?v=4",
+      "profile": "https://github.com/Emmanuel-Develops",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "imanpalsingh",
+      "name": "Imanpal Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49276301?v=4",
+      "profile": "https://imanpalsingh.vercel.app/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "anamikarawat",
+      "name": "Anamika Rawat",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95397876?v=4",
+      "profile": "https://github.com/anamikarawat",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}
