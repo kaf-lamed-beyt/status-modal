@@ -49,6 +49,17 @@ You can also use the `error` prop to apply the error style.
 <Status message={message} error />
 ```
 
+### Optional Props
+Here is a list of optional props that Status accepts
+- **wrapperId**:
+  This is the `id` of the container(`div`) where `status-modal` renders in the DOM tree as the last child of html `<body>` tag.
+  By default `wrapperId="status-modal-root"`.
+  You can change this `id` due to naming conflicts, or to group `status-modal` into collections and style the collections differently.
+  ```jsx
+  <Status message={loginMessage} wrapperId="status-modal-login" />
+  <Status message={alertMessage} wrapperId="status-modal-alert" />
+  ```
+
 ## Using status-modal with Next.js
 
 When you install status-modal in a Next.js app and try to use it, Next.js throws an error "ReferenceError: document is not defined" this happens because the document object is not available on the server when the page is built.
